@@ -1,0 +1,57 @@
+body{
+    width: max-content;
+    background-color: black;
+}
+
+.quote{
+    font-style: italic;
+}
+
+h1{
+    color: rgb(207, 124, 255);
+}
+
+h3{
+    color: rgb(232, 191, 255);
+}
+
+li{
+    color: cornsilk;
+}
+
+p{
+    color: cornsilk;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 238, 255);
+}
+
+a:hover{
+    color:rgb(255, 251, 0);
+}
+
+.projects{
+    display: inline-grid;
+    grid-template-columns:100%;
+    gap: 10px;
+}
+
+/* the media query runs only when the width of
+*  the window screen is greater than or equal
+*  to 600px
+*  and will be opposite for condition -->
+*  max-width:600px */
+@media(min-width:600px){
+    .projects{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* For window screen greater than or equal to 900px */
+@media (min-width: 900px) {
+    .projects {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
